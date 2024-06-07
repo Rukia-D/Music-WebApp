@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+}
+
+.profileVideo {
+  display: flex;
+  width: 67%;
+}
+
+.tracksAlbums {
+  width: 100%;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.albumsRelated {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+}
+
+@media screen and (max-width: 1000px) {
+  .profileVideo {
+    width: 100%;
+  }
+  .albumsRelated {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .profileVideo {
+    display: flex;
+    flex-direction: column;
+  }
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .albumsRelated {
+    width: 100%;
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+}

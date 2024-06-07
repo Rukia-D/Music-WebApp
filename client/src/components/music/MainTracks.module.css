@@ -1,0 +1,45 @@
+.container {
+  width: 33.67%;
+  height: 62rem;
+  overflow-y: auto;
+}
+
+.mainTracksTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #1c1c25;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-top: 0.5rem;
+    height: 20rem;
+  }
+
+  .mainTracksList > ul {
+    overflow: auto;
+    height: 20rem;
+  }
+
+  .mainTracksTitle {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  li {
+    font-size: 1rem;
+  }
+}
